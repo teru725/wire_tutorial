@@ -10,7 +10,7 @@ import (
 	"golab/wiretutorial"
 )
 
-// Injectors from wire.go:
+// Injectors from injector.go:
 
 func InitializeEvent(phrase string) (wiretutorial.Event, error) {
 	message := wiretutorial.NewMessage(phrase)
