@@ -1,7 +1,9 @@
 package wiretutorial
 
-type Message string
+type Message struct {
+	Text string
+}
 
-func NewMessage(phrase string) Message {
-	return Message(phrase)
+func NewMessage(text string) Message {
+	return Message{Text: text}
 }

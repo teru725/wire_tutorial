@@ -19,5 +19,5 @@ type Event struct {
 
 func (e Event) Start() {
 	msg := e.Greeter.Greet()
-	fmt.Println(msg)
+	fmt.Println(msg.Text)
 }

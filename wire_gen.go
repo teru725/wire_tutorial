@@ -12,8 +12,8 @@ import (
 
 // Injectors from injector.go:
 
-func InitializeEvent(phrase string) (wiretutorial.Event, error) {
-	message := wiretutorial.NewMessage(phrase)
+func InitializeEvent(text string) (wiretutorial.Event, error) {
+	message := wiretutorial.NewMessage(text)
 	greeter := wiretutorial.NewGreeter(message)
 	event, err := wiretutorial.NewEvent(greeter)
 	if err != nil {
