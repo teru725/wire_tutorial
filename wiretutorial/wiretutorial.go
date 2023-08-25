@@ -5,7 +5,7 @@ import (
 )
 
 var Set = wire.NewSet(
-	NewMessage,
+	wire.Struct(new(Message), "*"),
 	NewGreeter,
 	NewEvent,
 )

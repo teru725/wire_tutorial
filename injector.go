@@ -9,7 +9,7 @@ import (
 	"github.com/google/wire"
 )
 
-func InitializeEvent(text string) (wiretutorial.Event, error) {
+func InitializeEvent(phrase string) (wiretutorial.Event, error) {
 	wire.Build(wiretutorial.Set)
 	return wiretutorial.Event{}, nil // return value not used - only for avoid type error
 }
