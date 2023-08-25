@@ -10,6 +10,6 @@ import (
 )
 
 func InitializeEvent(phrase string) (wiretutorial.Event, error) {
-	wire.Build(wiretutorial.NewEvent, wiretutorial.NewGreeter, wiretutorial.NewMessage)
+	wire.Build(wiretutorial.Set)
 	return wiretutorial.Event{}, nil // return value not used - only for avoid type error
 }

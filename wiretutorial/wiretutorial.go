@@ -4,6 +4,8 @@ import (
 	"errors"
 	"fmt"
 	"time"
+
+	"github.com/google/wire"
 )
 
 type Message string
@@ -47,3 +49,9 @@ func (e Event) Start() {
 	msg := e.Greeter.Greet()
 	fmt.Println(msg)
 }
+
+var Set = wire.NewSet(
+	NewMessage,
+	NewGreeter,
+	NewEvent,
+)
